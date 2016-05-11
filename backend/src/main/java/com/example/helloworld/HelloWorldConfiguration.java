@@ -11,6 +11,8 @@ public class HelloWorldConfiguration extends Configuration {
     @NotEmpty
     private String defaultName = "Stranger";
 
+	private String[] allowedOrigins;
+
     @JsonProperty
     public String getTemplate() {
         return template;
@@ -30,4 +32,18 @@ public class HelloWorldConfiguration extends Configuration {
     public void setDefaultName(String name) {
         this.defaultName = name;
     }
+
+    @JsonProperty
+	public String[] getAllowedOrigins()
+	{
+		return allowedOrigins;
+	}
+
+    @JsonProperty
+	public void setAllowedOrigins(String[] allowedOrigins)
+	{
+		this.allowedOrigins = allowedOrigins;
+	}
+
+    
 }

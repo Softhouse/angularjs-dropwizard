@@ -5,6 +5,8 @@ server:
     - type: http
       port: 8080
 
+allowedOrigins:
+    - "*"
 
 template: Hello, %s!
 defaultName: Stranger
