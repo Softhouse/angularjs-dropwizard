@@ -43,7 +43,7 @@ Start the application
 
 Testing HelloWorld Resource
 
-	curl http://localhost:8080/hello-world
+	curl http://localhost:8080/api/hello-world
 	
 Testing Admin Functions
 
